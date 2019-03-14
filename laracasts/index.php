@@ -5,7 +5,7 @@
 require 'core/bootstrap.php'; //responsible for doing some connection work
 
 require Router::load('routes.php')
-  ->direct(Request::uri());
+  ->direct(Request::uri(), Request::method());
 
 
    
